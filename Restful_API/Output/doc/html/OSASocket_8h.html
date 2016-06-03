@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>RestfulLinux: osAdaption/OSASocket.h文件参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RestfulLinux
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>数据结构</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">osAdaption/OSASocket.h文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>网络Socket接口封装  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="osDataType_8h_source.html">osDataType.h</a>&quot;</code><br/>
+</div>
+<p><a href="OSASocket_8h_source.html">浏览该文件的源代码。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSASocket_8h.html#ab52c25c69b542ea1d7c55d2032514872">OSASocketType</a> { <a class="el" href="OSASocket_8h.html#ab52c25c69b542ea1d7c55d2032514872ad67cd6637f1d77f0d075c0a942b4a16c">SOCKET_TYPE_TCP</a> =  0, 
+<a class="el" href="OSASocket_8h.html#ab52c25c69b542ea1d7c55d2032514872ac18f5df158384c4a6610e679598d1d77">SOCKET_TYPE_UDP</a>
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Socket类型定义  <a href="OSASocket_8h.html#ab52c25c69b542ea1d7c55d2032514872">更多...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+函数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSASocket_8h.html#ab8d184b952bbded89903e085ece8e7ce">OSASocket_Create</a> (<a class="el" href="OSASocket_8h.html#ab52c25c69b542ea1d7c55d2032514872">OSASocketType</a> type)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">创建系统网络Socket  <a href="#ab8d184b952bbded89903e085ece8e7ce"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSASocket_8h.html#afbb46b071e3e1ee3dd69dd3cadd461f4">OSASocket_Connect</a> (int32 socket, int8 *host, uint16 port)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">连接指定主机端口，UDP和TCP均适用  <a href="#afbb46b071e3e1ee3dd69dd3cadd461f4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSASocket_8h.html#ab72b783e7dcef1737c5de9e97f257bd2">OSASocket_Send</a> (uint32 socket, uint8 *sendBuf, uint16 sendLen, uint32 timeout)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">通过socket发送数据，目标地址由<a class="el" href="OSASocket_8h.html#afbb46b071e3e1ee3dd69dd3cadd461f4">OSASocket_Connect</a> 函数指定  <a href="#ab72b783e7dcef1737c5de9e97f257bd2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSASocket_8h.html#afb5c34172f29ce1ddcbd68a9a84d31f0">OSASocket_Recv</a> (uint32 socket, uint8 *recvBuf, uint16 recvBufLen, uint32 timeout)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">通过socket接收数据，来源地址由<a class="el" href="OSASocket_8h.html#afbb46b071e3e1ee3dd69dd3cadd461f4">OSASocket_Connect</a> 函数指定  <a href="#afb5c34172f29ce1ddcbd68a9a84d31f0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSASocket_8h.html#a68c1d3e6b34d41e23c141d437eb1e7c9">OSASocket_Close</a> (uint32 socket)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭指定socket  <a href="#a68c1d3e6b34d41e23c141d437eb1e7c9"></a><br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>网络Socket接口封装 </p>
+<p>Copyright (c), 2012~2016 iot.10086.cn All Rights Reserved</p>
+<dl class="author"><dt><b>作者:</b></dt><dd>宋伟&lt;<a href="mailto:songwei1@iot.chinamobile.com">songwei1@iot.chinamobile.com</a>&gt; </dd></dl>
+<dl class="date"><dt><b>日期:</b></dt><dd>2016/05/19 </dd></dl>
+<dl class="version"><dt><b>版本:</b></dt><dd>1.0.0 </dd></dl>
+<dl class="user"><dt><b>Revision History:</b></dt><dd>Date Author Revised.Ver Notes<br/>
+ 2015/5/19 宋伟 1.0.0 file created<br/>
+ </dd></dl>
+</div><hr/><h2>枚举类型文档</h2>
+<a class="anchor" id="ab52c25c69b542ea1d7c55d2032514872"></a><!-- doxytag: member="OSASocket.h::OSASocketType" ref="ab52c25c69b542ea1d7c55d2032514872" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="OSASocket_8h.html#ab52c25c69b542ea1d7c55d2032514872">OSASocketType</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Socket类型定义 </p>
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="ab52c25c69b542ea1d7c55d2032514872ad67cd6637f1d77f0d075c0a942b4a16c"></a><!-- doxytag: member="SOCKET_TYPE_TCP" ref="ab52c25c69b542ea1d7c55d2032514872ad67cd6637f1d77f0d075c0a942b4a16c" args="" -->SOCKET_TYPE_TCP</em>&nbsp;</td><td>
+<p>TCP连接 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ab52c25c69b542ea1d7c55d2032514872ac18f5df158384c4a6610e679598d1d77"></a><!-- doxytag: member="SOCKET_TYPE_UDP" ref="ab52c25c69b542ea1d7c55d2032514872ac18f5df158384c4a6610e679598d1d77" args="" -->SOCKET_TYPE_UDP</em>&nbsp;</td><td>
+<p>UDP连接 </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>函数文档</h2>
+<a class="anchor" id="a68c1d3e6b34d41e23c141d437eb1e7c9"></a><!-- doxytag: member="OSASocket.h::OSASocket_Close" ref="a68c1d3e6b34d41e23c141d437eb1e7c9" args="(uint32 socket)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 <a class="el" href="OSASocket_8h.html#a68c1d3e6b34d41e23c141d437eb1e7c9">OSASocket_Close</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint32&#160;</td>
+          <td class="paramname"><em>socket</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>关闭指定socket </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket</td><td>需要关闭的socket号</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>参见<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afbb46b071e3e1ee3dd69dd3cadd461f4"></a><!-- doxytag: member="OSASocket.h::OSASocket_Connect" ref="afbb46b071e3e1ee3dd69dd3cadd461f4" args="(int32 socket, int8 *host, uint16 port)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 <a class="el" href="OSASocket_8h.html#afbb46b071e3e1ee3dd69dd3cadd461f4">OSASocket_Connect</a> </td>
+          <td>(</td>
+          <td class="paramtype">int32&#160;</td>
+          <td class="paramname"><em>socket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8 *&#160;</td>
+          <td class="paramname"><em>host</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>连接指定主机端口，UDP和TCP均适用 </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket</td><td>本地socket号 </td></tr>
+    <tr><td class="paramname">host</td><td>需要连接的主机名，可为域名或点分十进制IP地址 </td></tr>
+    <tr><td class="paramname">port</td><td>需要连接的主机端口</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>参见<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab8d184b952bbded89903e085ece8e7ce"></a><!-- doxytag: member="OSASocket.h::OSASocket_Create" ref="ab8d184b952bbded89903e085ece8e7ce" args="(OSASocketType type)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 <a class="el" href="OSASocket_8h.html#ab8d184b952bbded89903e085ece8e7ce">OSASocket_Create</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="OSASocket_8h.html#ab52c25c69b542ea1d7c55d2032514872">OSASocketType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>创建系统网络Socket </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>指定Socket类型</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt><b>返回值:</b></dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">成功</td><td>- 返回Socket号 </td></tr>
+    <tr><td class="paramname">失败</td><td>- 返回错误码，参见<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afb5c34172f29ce1ddcbd68a9a84d31f0"></a><!-- doxytag: member="OSASocket.h::OSASocket_Recv" ref="afb5c34172f29ce1ddcbd68a9a84d31f0" args="(uint32 socket, uint8 *recvBuf, uint16 recvBufLen, uint32 timeout)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 <a class="el" href="OSASocket_8h.html#afb5c34172f29ce1ddcbd68a9a84d31f0">OSASocket_Recv</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint32&#160;</td>
+          <td class="paramname"><em>socket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8 *&#160;</td>
+          <td class="paramname"><em>recvBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16&#160;</td>
+          <td class="paramname"><em>recvBufLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>通过socket接收数据，来源地址由<a class="el" href="OSASocket_8h.html#afbb46b071e3e1ee3dd69dd3cadd461f4">OSASocket_Connect</a> 函数指定 </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket</td><td>本地socket号 </td></tr>
+    <tr><td class="paramname">recvBuf</td><td>用于接收的数据缓冲区首地址 </td></tr>
+    <tr><td class="paramname">recvBufLen</td><td>数据接收缓冲区长度 </td></tr>
+    <tr><td class="paramname">timeout</td><td>接收超时时间，单位ms</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt><b>返回值:</b></dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">成功</td><td>- 返回成功接收的数据长度 </td></tr>
+    <tr><td class="paramname">失败</td><td>- 参见<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab72b783e7dcef1737c5de9e97f257bd2"></a><!-- doxytag: member="OSASocket.h::OSASocket_Send" ref="ab72b783e7dcef1737c5de9e97f257bd2" args="(uint32 socket, uint8 *sendBuf, uint16 sendLen, uint32 timeout)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 <a class="el" href="OSASocket_8h.html#ab72b783e7dcef1737c5de9e97f257bd2">OSASocket_Send</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint32&#160;</td>
+          <td class="paramname"><em>socket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8 *&#160;</td>
+          <td class="paramname"><em>sendBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16&#160;</td>
+          <td class="paramname"><em>sendLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>通过socket发送数据，目标地址由<a class="el" href="OSASocket_8h.html#afbb46b071e3e1ee3dd69dd3cadd461f4">OSASocket_Connect</a> 函数指定 </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket</td><td>本地socket号 </td></tr>
+    <tr><td class="paramname">sendBuf</td><td>需要发送的数据缓冲区 </td></tr>
+    <tr><td class="paramname">sendLen</td><td>需要发送的数据长度 </td></tr>
+    <tr><td class="paramname">timeout</td><td>发送超时时间，单位ms</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt><b>返回值:</b></dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">成功</td><td>- 返回成功发送的数据长度 </td></tr>
+    <tr><td class="paramname">失败</td><td>- 参见<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>数据结构</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2016年六月3日 星期五 09:08:32 for RestfulLinux by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

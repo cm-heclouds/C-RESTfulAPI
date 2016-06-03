@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>RestfulLinux: RFCmd.h文件参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RestfulLinux
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>数据结构</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">RFCmd.h文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>命令操作接口封装  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="osDataType_8h_source.html">osAdaption/osDataType.h</a>&gt;</code><br/>
+</div>
+<p><a href="RFCmd_8h_source.html">浏览该文件的源代码。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">命令状态定义</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFCmd_8h.html#aa69a55b609e1088ea916bec46fabc6ba">RFCMD_STATUS_OFFLINE</a>&#160;&#160;&#160;0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFCmd_8h.html#a3e6168dfb8b2bd8a28128166e88a35a2">RFCMD_STATUS_CREATED</a>&#160;&#160;&#160;1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFCmd_8h.html#a5a7ea9cf300a5269ce2b6f7571121103">RFCMD_STATUS_SENT</a>&#160;&#160;&#160;2</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFCmd_8h.html#ac8c9bf87d4662e6f9d31e9a11f37f2a7">RFCMD_STATUS_SENDFAIL</a>&#160;&#160;&#160;3</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFCmd_8h.html#a8bdd2790fa2e31bf3506d20b3c253da1">RFCMD_STATUS_RESPRECV</a>&#160;&#160;&#160;4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFCmd_8h.html#aaecfdb6563ab889e1cc8f97e0c710832">RFCMD_STATUS_RESPTIMEOUT</a>&#160;&#160;&#160;5</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFCmd_8h.html#adc18554dd45608bd681ff6eba3eec479">RFCMD_STATUS_RESPTOOLARGE</a>&#160;&#160;&#160;6</td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+函数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFCmd_8h.html#a877cf09f297ca9903a0497fad3204b40">RFCmd_Send</a> (int8 *remoteDevID, int8 *data, uint32 dataLen, int8 *cmdUUID)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">向指定设备发送命令  <a href="#a877cf09f297ca9903a0497fad3204b40"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFCmd_8h.html#ae90e0a16b5518ab4d6775061e655c1e6">RFCmd_GetStatus</a> (int8 *cmdUUID)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定命令的当前状态  <a href="#ae90e0a16b5518ab4d6775061e655c1e6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFCmd_8h.html#af1b54f6c440c6a3341f482cc43aea5fb">RFCmd_GetResponse</a> (int8 *cmdUUID, int8 *respData, uint32 *respDataLen)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定命令的响应内容，暂时只支持不超过4K的响应数据获取（包括HTTP头）  <a href="#af1b54f6c440c6a3341f482cc43aea5fb"></a><br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>命令操作接口封装 </p>
+<p>Copyright (c), 2012~2016 iot.10086.cn All Rights Reserved</p>
+<dl class="author"><dt><b>作者:</b></dt><dd>宋伟&lt;<a href="mailto:songwei1@iot.chinamobile.com">songwei1@iot.chinamobile.com</a>&gt; </dd></dl>
+<dl class="date"><dt><b>日期:</b></dt><dd>2016/05/25 </dd></dl>
+<dl class="version"><dt><b>版本:</b></dt><dd>1.0.0 </dd></dl>
+<dl class="user"><dt><b>Revision History:</b></dt><dd>Date Author Revised.Ver Notes<br/>
+ 2015/5/25 宋伟 1.0.0 file created<br/>
+ </dd></dl>
+</div><hr/><h2>宏定义文档</h2>
+<a class="anchor" id="a3e6168dfb8b2bd8a28128166e88a35a2"></a><!-- doxytag: member="RFCmd.h::RFCMD_STATUS_CREATED" ref="a3e6168dfb8b2bd8a28128166e88a35a2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFCmd_8h.html#a3e6168dfb8b2bd8a28128166e88a35a2">RFCMD_STATUS_CREATED</a>&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>命令已创建 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa69a55b609e1088ea916bec46fabc6ba"></a><!-- doxytag: member="RFCmd.h::RFCMD_STATUS_OFFLINE" ref="aa69a55b609e1088ea916bec46fabc6ba" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFCmd_8h.html#aa69a55b609e1088ea916bec46fabc6ba">RFCMD_STATUS_OFFLINE</a>&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>目标设备不在线 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8bdd2790fa2e31bf3506d20b3c253da1"></a><!-- doxytag: member="RFCmd.h::RFCMD_STATUS_RESPRECV" ref="a8bdd2790fa2e31bf3506d20b3c253da1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFCmd_8h.html#a8bdd2790fa2e31bf3506d20b3c253da1">RFCMD_STATUS_RESPRECV</a>&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>目标设备正常响应 </p>
+
+</div>
+</div>
+<a class="anchor" id="aaecfdb6563ab889e1cc8f97e0c710832"></a><!-- doxytag: member="RFCmd.h::RFCMD_STATUS_RESPTIMEOUT" ref="aaecfdb6563ab889e1cc8f97e0c710832" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFCmd_8h.html#aaecfdb6563ab889e1cc8f97e0c710832">RFCMD_STATUS_RESPTIMEOUT</a>&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>目标设备响应超时 </p>
+
+</div>
+</div>
+<a class="anchor" id="adc18554dd45608bd681ff6eba3eec479"></a><!-- doxytag: member="RFCmd.h::RFCMD_STATUS_RESPTOOLARGE" ref="adc18554dd45608bd681ff6eba3eec479" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFCmd_8h.html#adc18554dd45608bd681ff6eba3eec479">RFCMD_STATUS_RESPTOOLARGE</a>&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>目标设备响应过长 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac8c9bf87d4662e6f9d31e9a11f37f2a7"></a><!-- doxytag: member="RFCmd.h::RFCMD_STATUS_SENDFAIL" ref="ac8c9bf87d4662e6f9d31e9a11f37f2a7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFCmd_8h.html#ac8c9bf87d4662e6f9d31e9a11f37f2a7">RFCMD_STATUS_SENDFAIL</a>&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>命令发往目标设备失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5a7ea9cf300a5269ce2b6f7571121103"></a><!-- doxytag: member="RFCmd.h::RFCMD_STATUS_SENT" ref="a5a7ea9cf300a5269ce2b6f7571121103" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFCmd_8h.html#a5a7ea9cf300a5269ce2b6f7571121103">RFCMD_STATUS_SENT</a>&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>命令已发往目标设备 </p>
+
+</div>
+</div>
+<hr/><h2>函数文档</h2>
+<a class="anchor" id="af1b54f6c440c6a3341f482cc43aea5fb"></a><!-- doxytag: member="RFCmd.h::RFCmd_GetResponse" ref="af1b54f6c440c6a3341f482cc43aea5fb" args="(int8 *cmdUUID, int8 *respData, uint32 *respDataLen)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 <a class="el" href="RFCmd_8h.html#af1b54f6c440c6a3341f482cc43aea5fb">RFCmd_GetResponse</a> </td>
+          <td>(</td>
+          <td class="paramtype">int8 *&#160;</td>
+          <td class="paramname"><em>cmdUUID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8 *&#160;</td>
+          <td class="paramname"><em>respData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32 *&#160;</td>
+          <td class="paramname"><em>respDataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>获取指定命令的响应内容，暂时只支持不超过4K的响应数据获取（包括HTTP头） </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmdUUID</td><td>指定需要查看响应的命令UUID </td></tr>
+    <tr><td class="paramname">respData</td><td>用于返回响应数据的缓冲区地址，传入前需初始化 </td></tr>
+    <tr><td class="paramname">respDataLen</td><td>返回收到的响应数据长度</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>参考<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae90e0a16b5518ab4d6775061e655c1e6"></a><!-- doxytag: member="RFCmd.h::RFCmd_GetStatus" ref="ae90e0a16b5518ab4d6775061e655c1e6" args="(int8 *cmdUUID)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 <a class="el" href="RFCmd_8h.html#ae90e0a16b5518ab4d6775061e655c1e6">RFCmd_GetStatus</a> </td>
+          <td>(</td>
+          <td class="paramtype">int8 *&#160;</td>
+          <td class="paramname"><em>cmdUUID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>获取指定命令的当前状态 </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmdUUID</td><td>指定需要查看的命令的UUID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>状态码，参考RFCMD_STATUS_XXX定义 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a877cf09f297ca9903a0497fad3204b40"></a><!-- doxytag: member="RFCmd.h::RFCmd_Send" ref="a877cf09f297ca9903a0497fad3204b40" args="(int8 *remoteDevID, int8 *data, uint32 dataLen, int8 *cmdUUID)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 <a class="el" href="RFCmd_8h.html#a877cf09f297ca9903a0497fad3204b40">RFCmd_Send</a> </td>
+          <td>(</td>
+          <td class="paramtype">int8 *&#160;</td>
+          <td class="paramname"><em>remoteDevID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8 *&#160;</td>
+          <td class="paramname"><em>cmdUUID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>向指定设备发送命令 </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">remoteDevID</td><td>目标设备ID </td></tr>
+    <tr><td class="paramname">data</td><td>需要跟随命令发送的数据，可以为用户自定义JSON或其他数据 </td></tr>
+    <tr><td class="paramname">dataLen</td><td>data缓冲区有效数据长度 </td></tr>
+    <tr><td class="paramname">cmdUUID</td><td>返回该命令的UUID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>参考<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>数据结构</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2016年六月3日 星期五 09:08:32 for RestfulLinux by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

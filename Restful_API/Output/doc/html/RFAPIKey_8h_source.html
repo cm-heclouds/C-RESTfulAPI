@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>RestfulLinux: RFAPIKey.h源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RestfulLinux
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>数据结构</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">RFAPIKey.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="RFAPIKey_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00012"></a>00012 <span class="preprocessor">#ifndef __RFAPIKEY_H__</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define __RFAPIKEY_H__</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span>
+<a name="l00015"></a>00015 <span class="comment">/*****************************************************************************/</span>
+<a name="l00016"></a>00016 <span class="comment">/* Includes                                                                  */</span>
+<a name="l00017"></a>00017 <span class="comment">/*****************************************************************************/</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &lt;<a class="code" href="osDataType_8h.html" title="general data type definition .">osAdaption/osDataType.h</a>&gt;</span>
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 <span class="preprocessor">#ifdef _cplusplus</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span>{
+<a name="l00022"></a>00022 <span class="preprocessor">#endif   </span>
+<a name="l00023"></a>00023 <span class="preprocessor"></span>
+<a name="l00024"></a>00024 <span class="comment">/*****************************************************************************/</span>
+<a name="l00025"></a>00025 <span class="comment">/* External Definition（Constant and Macro )                                 */</span>
+<a name="l00026"></a>00026 <span class="comment">/*****************************************************************************/</span>
+<a name="l00027"></a>00027 
+<a name="l00029"></a><a class="code" href="RFAPIKey_8h.html#af578ef1448a44667163bac36573338b8">00029</a> <span class="preprocessor">#define APIKEY_TITILE_LEN_MAX   31</span>
+<a name="l00030"></a>00030 <span class="preprocessor"></span>
+<a name="l00031"></a><a class="code" href="RFAPIKey_8h.html#acc1f411996184aedde8f1a92be9bc337">00031</a> <span class="preprocessor">#define APIKEY_KEY_LEN_MAX      63</span>
+<a name="l00032"></a>00032 <span class="preprocessor"></span>
+<a name="l00039"></a><a class="code" href="RFAPIKey_8h.html#a3861f1bc9f05b3121553bff99e010300">00039</a> <span class="preprocessor">#define APIKEY_PERMISSION_FLAG_POST 0x0001</span>
+<a name="l00040"></a>00040 <span class="preprocessor"></span>
+<a name="l00041"></a><a class="code" href="RFAPIKey_8h.html#a59fa96f8532dba4ba7697728fb7ecc25">00041</a> <span class="preprocessor">#define APIKEY_PERMISSION_FLAG_PUT  0x0002</span>
+<a name="l00042"></a>00042 <span class="preprocessor"></span>
+<a name="l00043"></a><a class="code" href="RFAPIKey_8h.html#ae675ba5273b60aff7defe5e946bf6dff">00043</a> <span class="preprocessor">#define APIKEY_PERMISSION_FLAG_GET  0x0004</span>
+<a name="l00044"></a>00044 <span class="preprocessor"></span>
+<a name="l00045"></a><a class="code" href="RFAPIKey_8h.html#aa803f7fd707c28f2cc1c625a3ab98f02">00045</a> <span class="preprocessor">#define APIKEY_PERMISSION_FLAG_DELETE   0x0008</span>
+<a name="l00046"></a>00046 <span class="preprocessor"></span>
+<a name="l00047"></a><a class="code" href="RFAPIKey_8h.html#a7b3ee488773fb345fbc2c626f1ee1cec">00047</a> <span class="preprocessor">#define APIKEY_PERMISSION_FLAG_ALL  0xFFFF</span>
+<a name="l00048"></a>00048 <span class="preprocessor"></span>
+<a name="l00053"></a>00053 <span class="comment">/*****************************************************************************/</span>
+<a name="l00054"></a>00054 <span class="comment">/* External Structures, Enum and Typedefs                                    */</span>
+<a name="l00055"></a>00055 <span class="comment">/*****************************************************************************/</span>
+<a name="l00059"></a><a class="code" href="structRFAPIKeyInfo.html">00059</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00060"></a>00060 {
+<a name="l00062"></a><a class="code" href="structRFAPIKeyInfo.html#a1de9dd313a7bbdaeedf8cd9eb4f37cec">00062</a>     int8 title[<a class="code" href="RFAPIKey_8h.html#af578ef1448a44667163bac36573338b8">APIKEY_TITILE_LEN_MAX</a> + 1];
+<a name="l00064"></a><a class="code" href="structRFAPIKeyInfo.html#a10b2974805c5fdc749166dc9b61e1b2f">00064</a>     uint32 <a class="code" href="structRFAPIKeyInfo.html#a10b2974805c5fdc749166dc9b61e1b2f">permsFlag</a>;
+<a name="l00066"></a><a class="code" href="structRFAPIKeyInfo.html#a733684a5978bcb02d18977d9590c0b97">00066</a>     int8 key[<a class="code" href="RFAPIKey_8h.html#acc1f411996184aedde8f1a92be9bc337">APIKEY_KEY_LEN_MAX</a> + 1];
+<a name="l00068"></a><a class="code" href="structRFAPIKeyInfo.html#a5483620c5bc35ffd217c88da775d03fc">00068</a>     uint32 <a class="code" href="structRFAPIKeyInfo.html#a5483620c5bc35ffd217c88da775d03fc">createTime</a>; 
+<a name="l00069"></a>00069 } <a class="code" href="structRFAPIKeyInfo.html" title="APIKey信息结构体">RFAPIKeyInfo</a>, *<a class="code" href="structRFAPIKeyInfo.html" title="APIKey信息结构体">pRFAPIKeyInfo</a>;
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071 <span class="comment">/*****************************************************************************/</span>
+<a name="l00072"></a>00072 <span class="comment">/* External Function Prototypes                                              */</span>
+<a name="l00073"></a>00073 <span class="comment">/*****************************************************************************/</span>
+<a name="l00082"></a>00082 int32 <a class="code" href="RFAPIKey_8h.html#ad499d726f56189940d30eecba5e40616" title="创建APIKey">RFAPIKey_Create</a>(<a class="code" href="structRFAPIKeyInfo.html" title="APIKey信息结构体">RFAPIKeyInfo</a> *keyInfo);
+<a name="l00083"></a>00083 
+<a name="l00092"></a>00092 int32 <a class="code" href="RFAPIKey_8h.html#a00193ebdc68a1853599464426eb24f78" title="更新APIKey信息">RFAPIKey_UpdateInfo</a>(<a class="code" href="structRFAPIKeyInfo.html" title="APIKey信息结构体">RFAPIKeyInfo</a> *keyInfo);
+<a name="l00093"></a>00093 
+<a name="l00103"></a>00103 int32 <a class="code" href="RFAPIKey_8h.html#aed7a2a64fe8500884ae5be23cdd6a25d" title="查看本设备的所有key">RFAPIKey_View</a>(<a class="code" href="structRFAPIKeyInfo.html" title="APIKey信息结构体">RFAPIKeyInfo</a> **keyInfoList);
+<a name="l00104"></a>00104 
+<a name="l00112"></a>00112 int32 <a class="code" href="RFAPIKey_8h.html#a7337cf1558fd7a297f6943ad4aef0591" title="删除指定APIKey">RFAPIKey_Delete</a>(int8 *targetKey);
+<a name="l00113"></a>00113 
+<a name="l00114"></a>00114 <span class="preprocessor">#ifdef _cplusplus</span>
+<a name="l00115"></a>00115 <span class="preprocessor"></span>}
+<a name="l00116"></a>00116 <span class="preprocessor">#endif   </span>
+<a name="l00117"></a>00117 <span class="preprocessor"></span>
+<a name="l00118"></a>00118 <span class="preprocessor">#endif</span>
+<a name="l00119"></a>00119 <span class="preprocessor"></span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>数据结构</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2016年六月3日 星期五 09:08:32 for RestfulLinux by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

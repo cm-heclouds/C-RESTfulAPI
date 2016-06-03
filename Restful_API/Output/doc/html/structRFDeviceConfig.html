@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>RestfulLinux: RFDeviceConfig结构参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RestfulLinux
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>数据结构</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>数据结构</span></a></li>
+      <li><a href="classes.html"><span>数据结构索引</span></a></li>
+      <li><a href="functions.html"><span>数据字段</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">数据成员</a>  </div>
+  <div class="headertitle">
+<div class="title">RFDeviceConfig结构参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<!-- doxytag: class="RFDeviceConfig" -->
+<p>设备配置信息定义  
+ <a href="structRFDeviceConfig.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RFDevice_8h_source.html">RFDevice.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+数据成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFDeviceConfig.html#ab8ab5c9dd84e9ef083e93db71e3f607a">deviceTitle</a> [<a class="el" href="RFDevice_8h.html#a31e94f1a75e55e777a9271ad02f0e171">DEVICE_NAME_LEN_MAX</a>+1]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFDeviceConfig.html#a1cb83e7fa72ee2aaa8ed321a0465a2d3">deviceDesc</a> [<a class="el" href="RFDevice_8h.html#a9a0595cbc9ab486fdc0dc82edbbe4f5b">DEVICE_DESC_LEN_MAX</a>+1]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFDeviceConfig.html#ad73575801d670326a8730303b73de368">deviceTagList</a> [<a class="el" href="RFDevice_8h.html#adc7052524e5e4b14dae9691bc70ee162">DEVICE_TAGLIST_LEN_MAX</a>+1]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFDeviceConfig.html#aa8ee67e2247ea1976c1403b022311e31">APIKey</a> [<a class="el" href="RFDevice_8h.html#a3b20e0198c2eafa93ca5b0c48f6db8a3">DEVICE_API_KEY_LEN_MAX</a>+1]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structLocationInfo.html">LocationInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFDeviceConfig.html#a65d98624e4939fb4c67140ed9d2d3927">locInfo</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFDeviceConfig.html#a06ca83c377cc558bf0a25853bfe9d398">isPrivate</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>设备配置信息定义 </p>
+</div><hr/><h2>字段文档</h2>
+<a class="anchor" id="aa8ee67e2247ea1976c1403b022311e31"></a><!-- doxytag: member="RFDeviceConfig::APIKey" ref="aa8ee67e2247ea1976c1403b022311e31" args="[DEVICE_API_KEY_LEN_MAX+1]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8 <a class="el" href="structRFDeviceConfig.html#aa8ee67e2247ea1976c1403b022311e31">APIKey</a>[<a class="el" href="RFDevice_8h.html#a3b20e0198c2eafa93ca5b0c48f6db8a3">DEVICE_API_KEY_LEN_MAX</a>+1]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>具有操作权限的APIKey。对于新增设备必须使用MasterKey </p>
+
+</div>
+</div>
+<a class="anchor" id="a1cb83e7fa72ee2aaa8ed321a0465a2d3"></a><!-- doxytag: member="RFDeviceConfig::deviceDesc" ref="a1cb83e7fa72ee2aaa8ed321a0465a2d3" args="[DEVICE_DESC_LEN_MAX+1]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8 <a class="el" href="structRFDeviceConfig.html#a1cb83e7fa72ee2aaa8ed321a0465a2d3">deviceDesc</a>[<a class="el" href="RFDevice_8h.html#a9a0595cbc9ab486fdc0dc82edbbe4f5b">DEVICE_DESC_LEN_MAX</a>+1]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设备描述 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad73575801d670326a8730303b73de368"></a><!-- doxytag: member="RFDeviceConfig::deviceTagList" ref="ad73575801d670326a8730303b73de368" args="[DEVICE_TAGLIST_LEN_MAX+1]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8 <a class="el" href="structRFDeviceConfig.html#ad73575801d670326a8730303b73de368">deviceTagList</a>[<a class="el" href="RFDevice_8h.html#adc7052524e5e4b14dae9691bc70ee162">DEVICE_TAGLIST_LEN_MAX</a>+1]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设备标签表，可填写多个标签，以逗号隔开 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab8ab5c9dd84e9ef083e93db71e3f607a"></a><!-- doxytag: member="RFDeviceConfig::deviceTitle" ref="ab8ab5c9dd84e9ef083e93db71e3f607a" args="[DEVICE_NAME_LEN_MAX+1]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8 <a class="el" href="structRFDeviceConfig.html#ab8ab5c9dd84e9ef083e93db71e3f607a">deviceTitle</a>[<a class="el" href="RFDevice_8h.html#a31e94f1a75e55e777a9271ad02f0e171">DEVICE_NAME_LEN_MAX</a>+1]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设备名，用户范围内应唯一 </p>
+
+</div>
+</div>
+<a class="anchor" id="a06ca83c377cc558bf0a25853bfe9d398"></a><!-- doxytag: member="RFDeviceConfig::isPrivate" ref="a06ca83c377cc558bf0a25853bfe9d398" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolValue <a class="el" href="structRFDeviceConfig.html#a06ca83c377cc558bf0a25853bfe9d398">isPrivate</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否为私有设备 </p>
+
+</div>
+</div>
+<a class="anchor" id="a65d98624e4939fb4c67140ed9d2d3927"></a><!-- doxytag: member="RFDeviceConfig::locInfo" ref="a65d98624e4939fb4c67140ed9d2d3927" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structLocationInfo.html">LocationInfo</a> <a class="el" href="structRFDeviceConfig.html#a65d98624e4939fb4c67140ed9d2d3927">locInfo</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设备位置信息 </p>
+
+</div>
+</div>
+<hr/>该结构的文档由以下文件生成：<ul>
+<li><a class="el" href="RFDevice_8h_source.html">RFDevice.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>数据结构</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2016年六月3日 星期五 09:08:32 for RestfulLinux by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

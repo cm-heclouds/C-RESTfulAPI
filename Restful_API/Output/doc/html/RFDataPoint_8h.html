@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>RestfulLinux: RFDataPoint.h文件参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RestfulLinux
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>数据结构</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">数据结构</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">RFDataPoint.h文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>数据点操作接口封装，提供上报数据点的功能  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="osDataType_8h_source.html">osAdaption/osDataType.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="RFStream_8h_source.html">RFStream.h</a>&gt;</code><br/>
+</div>
+<p><a href="RFDataPoint_8h_source.html">浏览该文件的源代码。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+数据结构</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFDataPoint.html">RFDataPoint</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">数据点属性结构体定义  <a href="structRFDataPoint.html#details">更多...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10579465a75ea15de057092a4caf1b78"></a><!-- doxytag: member="RFDataPoint.h::DATAPOINT_VALUE_LEN_MAX" ref="a10579465a75ea15de057092a4caf1b78" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DATAPOINT_VALUE_LEN_MAX</b>&#160;&#160;&#160;15</td></tr>
+<tr><td colspan="2"><div class="groupHeader">数据点类型定义</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDataPoint_8h.html#aedd337d1394f2ce73b9163fd177976a3">DATAPOINT_VALUE_TYPE_STRING</a>&#160;&#160;&#160;0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDataPoint_8h.html#ae6eb0256a72b5a85fa57961e522e24dc">DATAPOINT_VALUE_TYPE_NUMBER</a>&#160;&#160;&#160;1</td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1ed08c6c6ecb45e4fa050f591c65c7c"></a><!-- doxytag: member="RFDataPoint.h::pRFDataPoint" ref="ac1ed08c6c6ecb45e4fa050f591c65c7c" args="" -->
+typedef struct <a class="el" href="structRFDataPoint.html">RFDataPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pRFDataPoint</b></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+函数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDataPoint_8h.html#a51b821297ef77ab22d13f0957b36b28f">RFDataPoint_Create</a> (int8 *APIKey, <a class="el" href="structRFDataPoint.html">RFDataPoint</a> *data, int32 count)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">向云端新增数据点。使用示例如下：<br/>
+ 　RFDataPoint dataPoint[5];<br/>
+ setValue(dataPoint); //对结构体数组各成员进行赋值<br/>
+ RFDataPoint_Create(APIKey, dataPoint, 5);<br/>
+  <a href="#a51b821297ef77ab22d13f0957b36b28f"></a><br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>数据点操作接口封装，提供上报数据点的功能 </p>
+<p>Copyright (c), 2012~2016 iot.10086.cn All Rights Reserved</p>
+<dl class="author"><dt><b>作者:</b></dt><dd>宋伟&lt;<a href="mailto:songwei1@iot.chinamobile.com">songwei1@iot.chinamobile.com</a>&gt; </dd></dl>
+<dl class="date"><dt><b>日期:</b></dt><dd>2016/05/24 </dd></dl>
+<dl class="version"><dt><b>版本:</b></dt><dd>1.0.0 </dd></dl>
+<dl class="user"><dt><b>Revision History:</b></dt><dd>Date Author Revised.Ver Notes<br/>
+ 2015/5/24 宋伟 1.0.0 file created<br/>
+ </dd></dl>
+</div><hr/><h2>宏定义文档</h2>
+<a class="anchor" id="ae6eb0256a72b5a85fa57961e522e24dc"></a><!-- doxytag: member="RFDataPoint.h::DATAPOINT_VALUE_TYPE_NUMBER" ref="ae6eb0256a72b5a85fa57961e522e24dc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFDataPoint_8h.html#ae6eb0256a72b5a85fa57961e522e24dc">DATAPOINT_VALUE_TYPE_NUMBER</a>&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>整型 </p>
+
+</div>
+</div>
+<a class="anchor" id="aedd337d1394f2ce73b9163fd177976a3"></a><!-- doxytag: member="RFDataPoint.h::DATAPOINT_VALUE_TYPE_STRING" ref="aedd337d1394f2ce73b9163fd177976a3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFDataPoint_8h.html#aedd337d1394f2ce73b9163fd177976a3">DATAPOINT_VALUE_TYPE_STRING</a>&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>字符串型 </p>
+
+</div>
+</div>
+<hr/><h2>函数文档</h2>
+<a class="anchor" id="a51b821297ef77ab22d13f0957b36b28f"></a><!-- doxytag: member="RFDataPoint.h::RFDataPoint_Create" ref="a51b821297ef77ab22d13f0957b36b28f" args="(int8 *APIKey, RFDataPoint *data, int32 count)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 <a class="el" href="RFDataPoint_8h.html#a51b821297ef77ab22d13f0957b36b28f">RFDataPoint_Create</a> </td>
+          <td>(</td>
+          <td class="paramtype">int8 *&#160;</td>
+          <td class="paramname"><em>APIKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structRFDataPoint.html">RFDataPoint</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>向云端新增数据点。使用示例如下：<br/>
+ 　RFDataPoint dataPoint[5];<br/>
+ setValue(dataPoint); //对结构体数组各成员进行赋值<br/>
+ RFDataPoint_Create(APIKey, dataPoint, 5);<br/>
+ </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">APIKey</td><td>有权限执行新增数据点操作的API Key </td></tr>
+    <tr><td class="paramname">data</td><td>需要增加的数据。该参数为结构体数组头指针，数组成员个数由count确定 </td></tr>
+    <tr><td class="paramname">count　指定需要增加的数据点个数</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>参考<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>数据结构</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2016年六月3日 星期五 09:08:32 for RestfulLinux by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>RestfulLinux: RFStream.h文件参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RestfulLinux
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>数据结构</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">数据结构</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">RFStream.h文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>数据流操作接口封装  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="osDataType_8h_source.html">osAdaption/osDataType.h</a>&gt;</code><br/>
+</div>
+<p><a href="RFStream_8h_source.html">浏览该文件的源代码。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+数据结构</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFStreamConfig.html">RFStreamConfig</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">数据流配置信息结构体定义  <a href="structRFStreamConfig.html#details">更多...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFStreamInfo.html">RFStreamInfo</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">数据流属性结构体定义  <a href="structRFStreamInfo.html#details">更多...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFStream_8h.html#a21b94a6b85272ff4598d7e49ade5f21c">STREAM_ID_LEN_MAX</a>&#160;&#160;&#160;15</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFStream_8h.html#a37dff262d871b782c90fcbc70900938f">STREAM_UUID_LEN_MAX</a>&#160;&#160;&#160;63</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFStream_8h.html#a328a8e353a33188c931ca15dc5f64929">STREAM_TAGLIST_LEN_MAX</a>&#160;&#160;&#160;63</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFStream_8h.html#a36be78abc6153060bd51c16ad92d2218">STREAM_UNIT_LEN_MAX</a>&#160;&#160;&#160;15</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFStream_8h.html#a3ec97482da2e5c6460b3051a21cf21e7">STREAM_UNITSYMBOL_LEN_MAX</a>&#160;&#160;&#160;15</td></tr>
+<tr><td colspan="2"><div class="groupHeader">数据流信息更新项选择标识</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFStream_8h.html#a4d9e8daf43277e33339a4ea8b97e0e4a">STREAMINFO_MASK_ID</a>&#160;&#160;&#160;0x0001</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFStream_8h.html#a2df1ec7621baf1eb53376465bb20b053">STREAMINFO_MASK_TAG</a>&#160;&#160;&#160;0x0002</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFStream_8h.html#a007f834b5c57216293c693f4d499a60a">STREAMINFO_MASK_UINT</a>&#160;&#160;&#160;0x0004</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFStream_8h.html#acf9a735b03685cb80d9cc918085462e2">STREAMINFO_MASK_UNITSYMBOL</a>&#160;&#160;&#160;0x0008</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFStream_8h.html#aa97c137ec180c58a1f322fdcd1d90073">STREAMINFO_MASK_ALL</a>&#160;&#160;&#160;0xFFFF</td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a093221fc3bab35d6c6e35bc5d8e32a54"></a><!-- doxytag: member="RFStream.h::pRFStreamConfig" ref="a093221fc3bab35d6c6e35bc5d8e32a54" args="" -->
+typedef struct <a class="el" href="structRFStreamConfig.html">RFStreamConfig</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pRFStreamConfig</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c7cb2a833dc1b219e0dedd66f3ac796"></a><!-- doxytag: member="RFStream.h::pRFStreamInfo" ref="a9c7cb2a833dc1b219e0dedd66f3ac796" args="" -->
+typedef struct <a class="el" href="structRFStreamInfo.html">RFStreamInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pRFStreamInfo</b></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+函数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFStream_8h.html#a3e517d75af61a368b137a2022f0ee0be">RFStream_Create</a> (<a class="el" href="structRFStreamConfig.html">RFStreamConfig</a> *streamConfig, int8 *APIKey, int8 *streamUUID)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">创建数据流  <a href="#a3e517d75af61a368b137a2022f0ee0be"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFStream_8h.html#a1ef09679745061f234e7612f4e586e4b">RFStream_UpdateInfo</a> (int8 *streamID, int8 *APIKey, <a class="el" href="structRFStreamConfig.html">RFStreamConfig</a> *streamConfig, uint32 updateFlag)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">更新数据流信息  <a href="#a1ef09679745061f234e7612f4e586e4b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFStream_8h.html#a70955d4ff2e0efc386f35b56d8fc95d8">RFStream_View</a> (int8 *streamIDList, int8 *APIKey, <a class="el" href="structRFStreamInfo.html">RFStreamInfo</a> **streamList)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">查询数据流信息，只限本设备的数据流  <a href="#a70955d4ff2e0efc386f35b56d8fc95d8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFStream_8h.html#a22f99b5d89ba41eb74cfbd4804702d99">RFStream_Delete</a> (int8 *APIKey, int8 *streamID)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">删除指定数据流  <a href="#a22f99b5d89ba41eb74cfbd4804702d99"></a><br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>数据流操作接口封装 </p>
+<p>Copyright (c), 2012~2016 iot.10086.cn All Rights Reserved</p>
+<dl class="author"><dt><b>作者:</b></dt><dd>宋伟&lt;<a href="mailto:songwei1@iot.chinamobile.com">songwei1@iot.chinamobile.com</a>&gt; </dd></dl>
+<dl class="date"><dt><b>日期:</b></dt><dd>2016/05/23 </dd></dl>
+<dl class="version"><dt><b>版本:</b></dt><dd>1.0.0 </dd></dl>
+<dl class="user"><dt><b>Revision History:</b></dt><dd>Date Author Revised.Ver Notes<br/>
+ 2015/5/23 宋伟 1.0.0 file created<br/>
+ </dd></dl>
+</div><hr/><h2>宏定义文档</h2>
+<a class="anchor" id="a21b94a6b85272ff4598d7e49ade5f21c"></a><!-- doxytag: member="RFStream.h::STREAM_ID_LEN_MAX" ref="a21b94a6b85272ff4598d7e49ade5f21c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFStream_8h.html#a21b94a6b85272ff4598d7e49ade5f21c">STREAM_ID_LEN_MAX</a>&#160;&#160;&#160;15</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>数据流名称长度定义 </p>
+
+</div>
+</div>
+<a class="anchor" id="a328a8e353a33188c931ca15dc5f64929"></a><!-- doxytag: member="RFStream.h::STREAM_TAGLIST_LEN_MAX" ref="a328a8e353a33188c931ca15dc5f64929" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFStream_8h.html#a328a8e353a33188c931ca15dc5f64929">STREAM_TAGLIST_LEN_MAX</a>&#160;&#160;&#160;63</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>数据流标签表长度定义 </p>
+
+</div>
+</div>
+<a class="anchor" id="a36be78abc6153060bd51c16ad92d2218"></a><!-- doxytag: member="RFStream.h::STREAM_UNIT_LEN_MAX" ref="a36be78abc6153060bd51c16ad92d2218" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFStream_8h.html#a36be78abc6153060bd51c16ad92d2218">STREAM_UNIT_LEN_MAX</a>&#160;&#160;&#160;15</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>数据流数据单位长度定义 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3ec97482da2e5c6460b3051a21cf21e7"></a><!-- doxytag: member="RFStream.h::STREAM_UNITSYMBOL_LEN_MAX" ref="a3ec97482da2e5c6460b3051a21cf21e7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFStream_8h.html#a3ec97482da2e5c6460b3051a21cf21e7">STREAM_UNITSYMBOL_LEN_MAX</a>&#160;&#160;&#160;15</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>数据流数据单位符号长度定义 </p>
+
+</div>
+</div>
+<a class="anchor" id="a37dff262d871b782c90fcbc70900938f"></a><!-- doxytag: member="RFStream.h::STREAM_UUID_LEN_MAX" ref="a37dff262d871b782c90fcbc70900938f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFStream_8h.html#a37dff262d871b782c90fcbc70900938f">STREAM_UUID_LEN_MAX</a>&#160;&#160;&#160;63</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>数据流唯一标识符长度定义 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa97c137ec180c58a1f322fdcd1d90073"></a><!-- doxytag: member="RFStream.h::STREAMINFO_MASK_ALL" ref="aa97c137ec180c58a1f322fdcd1d90073" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFStream_8h.html#aa97c137ec180c58a1f322fdcd1d90073">STREAMINFO_MASK_ALL</a>&#160;&#160;&#160;0xFFFF</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>更新以上所有项 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4d9e8daf43277e33339a4ea8b97e0e4a"></a><!-- doxytag: member="RFStream.h::STREAMINFO_MASK_ID" ref="a4d9e8daf43277e33339a4ea8b97e0e4a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFStream_8h.html#a4d9e8daf43277e33339a4ea8b97e0e4a">STREAMINFO_MASK_ID</a>&#160;&#160;&#160;0x0001</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>更新数据流名称 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2df1ec7621baf1eb53376465bb20b053"></a><!-- doxytag: member="RFStream.h::STREAMINFO_MASK_TAG" ref="a2df1ec7621baf1eb53376465bb20b053" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFStream_8h.html#a2df1ec7621baf1eb53376465bb20b053">STREAMINFO_MASK_TAG</a>&#160;&#160;&#160;0x0002</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>更新数据流标签表 </p>
+
+</div>
+</div>
+<a class="anchor" id="a007f834b5c57216293c693f4d499a60a"></a><!-- doxytag: member="RFStream.h::STREAMINFO_MASK_UINT" ref="a007f834b5c57216293c693f4d499a60a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFStream_8h.html#a007f834b5c57216293c693f4d499a60a">STREAMINFO_MASK_UINT</a>&#160;&#160;&#160;0x0004</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>更新数据流数据单位 </p>
+
+</div>
+</div>
+<a class="anchor" id="acf9a735b03685cb80d9cc918085462e2"></a><!-- doxytag: member="RFStream.h::STREAMINFO_MASK_UNITSYMBOL" ref="acf9a735b03685cb80d9cc918085462e2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="RFStream_8h.html#acf9a735b03685cb80d9cc918085462e2">STREAMINFO_MASK_UNITSYMBOL</a>&#160;&#160;&#160;0x0008</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>更新数据流数据单位符号 </p>
+
+</div>
+</div>
+<hr/><h2>函数文档</h2>
+<a class="anchor" id="a3e517d75af61a368b137a2022f0ee0be"></a><!-- doxytag: member="RFStream.h::RFStream_Create" ref="a3e517d75af61a368b137a2022f0ee0be" args="(RFStreamConfig *streamConfig, int8 *APIKey, int8 *streamUUID)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 <a class="el" href="RFStream_8h.html#a3e517d75af61a368b137a2022f0ee0be">RFStream_Create</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structRFStreamConfig.html">RFStreamConfig</a> *&#160;</td>
+          <td class="paramname"><em>streamConfig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8 *&#160;</td>
+          <td class="paramname"><em>APIKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8 *&#160;</td>
+          <td class="paramname"><em>streamUUID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>创建数据流 </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">streamConfig</td><td>新数据流的配置信息 </td></tr>
+    <tr><td class="paramname">APIKey</td><td>有权限创建数据流的APIKey </td></tr>
+    <tr><td class="paramname">streamUUID</td><td>返回创建成功的数据流的UUID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>参考<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a22f99b5d89ba41eb74cfbd4804702d99"></a><!-- doxytag: member="RFStream.h::RFStream_Delete" ref="a22f99b5d89ba41eb74cfbd4804702d99" args="(int8 *APIKey, int8 *streamID)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 <a class="el" href="RFStream_8h.html#a22f99b5d89ba41eb74cfbd4804702d99">RFStream_Delete</a> </td>
+          <td>(</td>
+          <td class="paramtype">int8 *&#160;</td>
+          <td class="paramname"><em>APIKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8 *&#160;</td>
+          <td class="paramname"><em>streamID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>删除指定数据流 </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">APIKey</td><td>有权限删除数据流的APIKey </td></tr>
+    <tr><td class="paramname">streamID</td><td>指定需要删除的数据流ID，非创建数据流时返回的UUID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>参考<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1ef09679745061f234e7612f4e586e4b"></a><!-- doxytag: member="RFStream.h::RFStream_UpdateInfo" ref="a1ef09679745061f234e7612f4e586e4b" args="(int8 *streamID, int8 *APIKey, RFStreamConfig *streamConfig, uint32 updateFlag)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 <a class="el" href="RFStream_8h.html#a1ef09679745061f234e7612f4e586e4b">RFStream_UpdateInfo</a> </td>
+          <td>(</td>
+          <td class="paramtype">int8 *&#160;</td>
+          <td class="paramname"><em>streamID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8 *&#160;</td>
+          <td class="paramname"><em>APIKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structRFStreamConfig.html">RFStreamConfig</a> *&#160;</td>
+          <td class="paramname"><em>streamConfig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32&#160;</td>
+          <td class="paramname"><em>updateFlag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>更新数据流信息 </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">streamID</td><td>指定需要更新的数据流ID，非创建数据流时返回的UUID </td></tr>
+    <tr><td class="paramname">APIKey</td><td>有权限修改数据流信息的APIKey </td></tr>
+    <tr><td class="paramname">streamConfig</td><td>新的数据流信息 </td></tr>
+    <tr><td class="paramname">updateFlag</td><td>指定需要更新的数据流信息选项，信息内容由streamConfig 对应成员值确定</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>参考<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a70955d4ff2e0efc386f35b56d8fc95d8"></a><!-- doxytag: member="RFStream.h::RFStream_View" ref="a70955d4ff2e0efc386f35b56d8fc95d8" args="(int8 *streamIDList, int8 *APIKey, RFStreamInfo **streamList)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 <a class="el" href="RFStream_8h.html#a70955d4ff2e0efc386f35b56d8fc95d8">RFStream_View</a> </td>
+          <td>(</td>
+          <td class="paramtype">int8 *&#160;</td>
+          <td class="paramname"><em>streamIDList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8 *&#160;</td>
+          <td class="paramname"><em>APIKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structRFStreamInfo.html">RFStreamInfo</a> **&#160;</td>
+          <td class="paramname"><em>streamList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>查询数据流信息，只限本设备的数据流 </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">streamIDList</td><td>指定需要查询的目标数据流ID，多个数据流以逗号隔开。为空指针 或长度为0则表示查询本设备的所有数据流 </td></tr>
+    <tr><td class="paramname">APIKey</td><td>具有查询权限的APIKey </td></tr>
+    <tr><td class="paramname">streamList</td><td>返回RFStreamInfo类型的结构体数组指针，用户以“streamList[i]” 的形式查看各条数据流信息，使用后空间需释放</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>大于等于0 - streamList中结构体成员个数 小于0 - 参考<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>数据结构</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2016年六月3日 星期五 09:08:32 for RestfulLinux by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

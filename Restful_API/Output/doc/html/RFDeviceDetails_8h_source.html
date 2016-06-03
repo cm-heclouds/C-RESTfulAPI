@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>RestfulLinux: RFDeviceDetails.h源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RestfulLinux
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>数据结构</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">RFDeviceDetails.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="RFDeviceDetails_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00012"></a>00012 <span class="preprocessor">#ifndef __RFDEVICEDETAILS_H__ </span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define __RFDEVICEDETAILS_H__</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span>
+<a name="l00015"></a>00015 <span class="comment">/*****************************************************************************/</span>
+<a name="l00016"></a>00016 <span class="comment">/* Includes                                                                  */</span>
+<a name="l00017"></a>00017 <span class="comment">/*****************************************************************************/</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &lt;<a class="code" href="RFDevice_8h.html" title="设备操作接口封装">RFDevice.h</a>&gt;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &lt;<a class="code" href="RFStream_8h.html" title="数据流操作接口封装">RFStream.h</a>&gt;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &lt;<a class="code" href="RFAPIKey_8h.html" title="APIKey操作接口封装。">RFAPIKey.h</a>&gt;</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#include &lt;<a class="code" href="RFBinData_8h.html" title="二进制数据操作接口封装，主要提供上传和查看功能。">RFBinData.h</a>&gt;</span>
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023 <span class="preprocessor">#ifdef _cplusplus</span>
+<a name="l00024"></a>00024 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span>{
+<a name="l00025"></a>00025 <span class="preprocessor">#endif   </span>
+<a name="l00026"></a>00026 <span class="preprocessor"></span>
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028 <span class="comment">/*****************************************************************************/</span>
+<a name="l00029"></a>00029 <span class="comment">/* External Definition（Constant and Macro )                                 */</span>
+<a name="l00030"></a>00030 <span class="comment">/*****************************************************************************/</span>
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036 <span class="comment">/*****************************************************************************/</span>
+<a name="l00037"></a>00037 <span class="comment">/* External Structures, Enum and Typedefs                                    */</span>
+<a name="l00038"></a>00038 <span class="comment">/*****************************************************************************/</span>
+<a name="l00042"></a><a class="code" href="structRFDataStreamList.html">00042</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00043"></a>00043 {
+<a name="l00045"></a><a class="code" href="structRFDataStreamList.html#a46fe568498df6f07bcb5edf68ed8897a">00045</a>     <a class="code" href="structRFStreamInfo.html" title="数据流属性结构体定义">RFStreamInfo</a> *<a class="code" href="structRFDataStreamList.html#a46fe568498df6f07bcb5edf68ed8897a">streamList</a>;
+<a name="l00047"></a><a class="code" href="structRFDataStreamList.html#a22115dc71b1e8f51d2466b0a54a06bd9">00047</a>     uint32 <a class="code" href="structRFDataStreamList.html#a22115dc71b1e8f51d2466b0a54a06bd9">streamCnt</a>;
+<a name="l00048"></a>00048 } <a class="code" href="structRFDataStreamList.html" title="数据流信息表">RFDataStreamList</a>, *<a class="code" href="structRFDataStreamList.html" title="数据流信息表">pRFDataStreamList</a>;
+<a name="l00049"></a>00049 
+<a name="l00053"></a><a class="code" href="structRFAPIKeyList.html">00053</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00054"></a>00054 {
+<a name="l00056"></a><a class="code" href="structRFAPIKeyList.html#a10e4d0c5db77be53ffb53fe9ca51a677">00056</a>     <a class="code" href="structRFAPIKeyInfo.html" title="APIKey信息结构体">RFAPIKeyInfo</a> *<a class="code" href="structRFAPIKeyList.html#a10e4d0c5db77be53ffb53fe9ca51a677">keyList</a>;
+<a name="l00058"></a><a class="code" href="structRFAPIKeyList.html#a94fb1a94fa531ea015b9c4516b48fddc">00058</a>     uint32 <a class="code" href="structRFAPIKeyList.html#a94fb1a94fa531ea015b9c4516b48fddc">keyCnt</a>;
+<a name="l00059"></a>00059 } <a class="code" href="structRFAPIKeyList.html" title="API Key信息表">RFAPIKeyList</a>, *<a class="code" href="structRFAPIKeyList.html" title="API Key信息表">pRFAPIKeyList</a>;
+<a name="l00060"></a>00060 
+<a name="l00064"></a><a class="code" href="structRFBinDataInfo.html">00064</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00065"></a>00065 {
+<a name="l00067"></a><a class="code" href="structRFBinDataInfo.html#a41fb3fdf01ef0ea7e779b8b30c78c2c6">00067</a>     int8 index[<a class="code" href="RFBinData_8h.html#aca8bf5faef55dccf33862cc2dbb88398">BINDATA_INDEX_LEN_MAX</a> + 1];
+<a name="l00069"></a><a class="code" href="structRFBinDataInfo.html#a676135f593f986419a4999b7e136bdae">00069</a>     uint32 <a class="code" href="structRFBinDataInfo.html#a676135f593f986419a4999b7e136bdae">time</a>;
+<a name="l00071"></a><a class="code" href="structRFBinDataInfo.html#a0d40f1591c12f359c3fa3f982f9a221d">00071</a>     uint32 <a class="code" href="structRFBinDataInfo.html#a0d40f1591c12f359c3fa3f982f9a221d">size</a>;
+<a name="l00072"></a>00072 } <a class="code" href="structRFBinDataInfo.html" title="二进制数据信息">RFBinDataInfo</a>, *<a class="code" href="structRFBinDataInfo.html" title="二进制数据信息">pRFBinDataInfo</a>;
+<a name="l00073"></a>00073 
+<a name="l00077"></a><a class="code" href="structRFBinDataList.html">00077</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00078"></a>00078 {
+<a name="l00080"></a><a class="code" href="structRFBinDataList.html#ad826533417e1a9417c3b2c1388679e77">00080</a>     <a class="code" href="structRFBinDataInfo.html" title="二进制数据信息">RFBinDataInfo</a> *<a class="code" href="structRFBinDataList.html#ad826533417e1a9417c3b2c1388679e77">binDataList</a>;
+<a name="l00082"></a><a class="code" href="structRFBinDataList.html#a07096b28e4a2335b3dd50d5f640e22ec">00082</a>     uint32 <a class="code" href="structRFBinDataList.html#a07096b28e4a2335b3dd50d5f640e22ec">binDataCnt</a>;
+<a name="l00083"></a>00083 } <a class="code" href="structRFBinDataList.html" title="设备二进制数据信息表">RFBinDataList</a>, *<a class="code" href="structRFBinDataList.html" title="设备二进制数据信息表">pRFBinDataList</a>;
+<a name="l00084"></a>00084 
+<a name="l00088"></a><a class="code" href="structRFDeviceDetails.html">00088</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00089"></a>00089 {
+<a name="l00091"></a><a class="code" href="structRFDeviceDetails.html#af466e73bff8122d5b0f79c2b5a3b10ea">00091</a>         <a class="code" href="structRFDeviceInfo.html" title="设备属性定义">RFDeviceInfo</a> <a class="code" href="structRFDeviceDetails.html#af466e73bff8122d5b0f79c2b5a3b10ea">devInfo</a>;
+<a name="l00093"></a><a class="code" href="structRFDeviceDetails.html#afefe6be5dab5cd42474976049d4696b7">00093</a>     <a class="code" href="structRFDataStreamList.html" title="数据流信息表">RFDataStreamList</a> <a class="code" href="structRFDeviceDetails.html#afefe6be5dab5cd42474976049d4696b7">stream</a>;
+<a name="l00095"></a><a class="code" href="structRFDeviceDetails.html#ad9c84798526786d0d946fbcedfc6b11a">00095</a>     <a class="code" href="structRFAPIKeyList.html" title="API Key信息表">RFAPIKeyList</a> <a class="code" href="structRFDeviceDetails.html#ad9c84798526786d0d946fbcedfc6b11a">key</a>;
+<a name="l00097"></a><a class="code" href="structRFDeviceDetails.html#a0e75b2f2b752c8d9a486c2fcea27c12a">00097</a>     <a class="code" href="structRFBinDataList.html" title="设备二进制数据信息表">RFBinDataList</a> <a class="code" href="structRFDeviceDetails.html#a0e75b2f2b752c8d9a486c2fcea27c12a">binData</a>;
+<a name="l00098"></a>00098 } <a class="code" href="structRFDeviceDetails.html" title="设备详细信息结构定义">RFDeviceDetails</a>, *<a class="code" href="structRFDeviceDetails.html" title="设备详细信息结构定义">pRFDeviceDetails</a>;
+<a name="l00099"></a>00099 
+<a name="l00100"></a>00100 <span class="comment">/*****************************************************************************/</span>
+<a name="l00101"></a>00101 <span class="comment">/* External Function Prototypes                                              */</span>
+<a name="l00102"></a>00102 <span class="comment">/*****************************************************************************/</span>
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104 
+<a name="l00105"></a>00105 <span class="preprocessor">#ifdef _cplusplus</span>
+<a name="l00106"></a>00106 <span class="preprocessor"></span>}
+<a name="l00107"></a>00107 <span class="preprocessor">#endif   </span>
+<a name="l00108"></a>00108 <span class="preprocessor"></span>
+<a name="l00109"></a>00109 <span class="preprocessor">#endif</span>
+<a name="l00110"></a>00110 <span class="preprocessor"></span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>数据结构</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2016年六月3日 星期五 09:08:32 for RestfulLinux by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

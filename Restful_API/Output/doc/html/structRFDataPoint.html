@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>RestfulLinux: RFDataPoint结构参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RestfulLinux
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>数据结构</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>数据结构</span></a></li>
+      <li><a href="classes.html"><span>数据结构索引</span></a></li>
+      <li><a href="functions.html"><span>数据字段</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">数据成员</a>  </div>
+  <div class="headertitle">
+<div class="title">RFDataPoint结构参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<!-- doxytag: class="RFDataPoint" -->
+<p>数据点属性结构体定义  
+ <a href="structRFDataPoint.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RFDataPoint_8h_source.html">RFDataPoint.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+数据成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFDataPoint.html#a2a5669fabe8a6dd5f9d7fb1d7f3e6a15">streamID</a> [<a class="el" href="RFStream_8h.html#a21b94a6b85272ff4598d7e49ade5f21c">STREAM_ID_LEN_MAX</a>+1]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFDataPoint.html#ae4a00bdcde532b2619b6c701b45736b3">value</a> [DATAPOINT_VALUE_LEN_MAX+1]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFDataPoint.html#a1fd817f8d265c8c83472b1efee97a2ea">valueType</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFDataPoint.html#a676135f593f986419a4999b7e136bdae">time</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>数据点属性结构体定义 </p>
+</div><hr/><h2>字段文档</h2>
+<a class="anchor" id="a2a5669fabe8a6dd5f9d7fb1d7f3e6a15"></a><!-- doxytag: member="RFDataPoint::streamID" ref="a2a5669fabe8a6dd5f9d7fb1d7f3e6a15" args="[STREAM_ID_LEN_MAX+1]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8 <a class="el" href="structRFDataPoint.html#a2a5669fabe8a6dd5f9d7fb1d7f3e6a15">streamID</a>[<a class="el" href="RFStream_8h.html#a21b94a6b85272ff4598d7e49ade5f21c">STREAM_ID_LEN_MAX</a>+1]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>数据点所属的数据流名称 </p>
+
+</div>
+</div>
+<a class="anchor" id="a676135f593f986419a4999b7e136bdae"></a><!-- doxytag: member="RFDataPoint::time" ref="a676135f593f986419a4999b7e136bdae" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32 <a class="el" href="structRFDataPoint.html#a676135f593f986419a4999b7e136bdae">time</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>数据点创建时间，从公元1970年1月1日0时0分0秒的UTC时间算起所经过的秒数。 设为0表示不添加时间参数，由云端确定 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae4a00bdcde532b2619b6c701b45736b3"></a><!-- doxytag: member="RFDataPoint::value" ref="ae4a00bdcde532b2619b6c701b45736b3" args="[DATAPOINT_VALUE_LEN_MAX+1]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8 <a class="el" href="structRFDataPoint.html#ae4a00bdcde532b2619b6c701b45736b3">value</a>[DATAPOINT_VALUE_LEN_MAX+1]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>数据点值 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1fd817f8d265c8c83472b1efee97a2ea"></a><!-- doxytag: member="RFDataPoint::valueType" ref="a1fd817f8d265c8c83472b1efee97a2ea" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 <a class="el" href="structRFDataPoint.html#a1fd817f8d265c8c83472b1efee97a2ea">valueType</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>数据点数据类型，参见DATAPOINT_VALUE_TYPE_XXX，目前支持字符串和整型两种 </p>
+
+</div>
+</div>
+<hr/>该结构的文档由以下文件生成：<ul>
+<li><a class="el" href="RFDataPoint_8h_source.html">RFDataPoint.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>数据结构</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2016年六月3日 星期五 09:08:32 for RestfulLinux by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>
