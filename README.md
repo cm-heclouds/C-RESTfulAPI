@@ -4,16 +4,13 @@
 ├── doxygen.conf	Doxygen配置文件<br>
 ├── GenOutPut.sh	编译脚本<br>
 ├── Inc				头文件目录<br>
-├── Lib				库文件目录<br>
 ├── Makefile<br>
-├── Objs			编译中间文件目录<br>
 ├── Output			输出面向用户的文件<br>
-├── Readme			说明文档<br>
 └── Src				源码目录<br>
 <br>
 <br>
 [编译接口库]<br>
-如果只需要现成的静态库，直接参看Output目录。当用户对代码进行修改后，直接运行脚本GenOutput.sh，编译结果和自动生成的Doxygen文档自动放入Output目录。<br>
+直接运行脚本GenOutput.sh，编译结果和自动生成的Doxygen文档自动放入Output目录。<br>
 <br>
 [库文件说明]<br>
 libosAdaption.a：OS接口封装库，封装内容参见头文件，位于include/osAdaption目录<br>
