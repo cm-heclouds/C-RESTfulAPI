@@ -10,13 +10,18 @@ export AR
 export PLAT
 export TOPDIR
 
-LIB := Lib/libosAdaption.a
+LIBDIR := $(TOPDIR)/Lib
+LIB := $(LIBDIR)/libosAdaption.a
 INCLUDE := -I./Inc -I./osAdaption/Inc 
-TARGET := Lib/libRestFulLinux.a
+TARGET := $(LIBDIR)/libRestFulLinux.a
 SRC := $(wildcard Src/*.c)
 OBJS := $(patsubst %.c, Objs/%.o,$(notdir $(SRC)))
 
 all : 
+	@if test ! -d $(LIBDIR);\
+	then \
+		mkdir $(LIBDIR);\
+	fi
 	$(MAKE) -C Src
 	$(AR) -cr $(TARGET) $(OBJS)
 
@@ -26,4 +31,9 @@ all :
 clean :
 	rm -rf $(TARGET)
 	$(MAKE) clean -C Src
+	@if test -d $(LIBDIR);\
+	then \
+		rm -rf $(LIBDIR);\
+	fi
+
 

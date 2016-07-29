@@ -6,7 +6,13 @@ LIB := $(LIBDIR)/libosAdaption.a
 SRC := $(wildcard *.c)
 OBJS := $(patsubst %.c, $(OUTPUTDIR)/%.o,$(notdir $(SRC)))
 
-all : $(OBJS) $(LIB)
+all : $(OUTPUTDIR) $(OBJS) $(LIB)
+
+$(OUTPUTDIR) :
+	@if test ! -d $(OUTPUTDIR);\
+	then \
+		mkdir $(OUTPUTDIR);\
+	fi
 
 $(LIB) :
 	$(MAKE) -C osAdaption
@@ -20,5 +26,9 @@ sinclude $(OBJS:.o=.d)
 
 clean :
 	rm -rf $(OBJS) $(OBJS:.o=.d)
+	@if test -d $(OUTPUTDIR);\
+	then \
+		rm -rf $(OUTPUTDIR);\
+	fi
 	$(MAKE) clean -C osAdaption
 

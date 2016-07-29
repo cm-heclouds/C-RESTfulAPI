@@ -9,8 +9,14 @@ INCLUDE := $(TOPDIR)/Inc
 SRC := $(wildcard $(SRCDIR)/*.c)
 OBJS := $(patsubst %.c, $(OUTPUTDIR)/%.o,$(notdir $(SRC)))
 
-all : $(OBJS)
+all : $(OUTPUTDIR) $(OBJS) 
 	$(AR) -cr $(TARGET) $(OBJS)
+
+$(OUTPUTDIR) :
+	@if test ! -d $(OUTPUTDIR);\
+	then \
+		mkdir $(OUTPUTDIR);\
+	fi
 
 
 $(OUTPUTDIR)/%.o : $(SRCDIR)/%.c 
@@ -23,4 +29,8 @@ sinclude $(OBJS:.o=.d)
 clean:
 	rm -rf $(TARGET) 
 	rm -rf $(OBJS) $(OBJS:.o=.d)
+	@if test -d $(OUTPUTDIR);\
+	then \
+		rm -rf $(OUTPUTDIR);\
+	fi
 
