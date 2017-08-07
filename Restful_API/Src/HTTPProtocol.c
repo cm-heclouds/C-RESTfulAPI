@@ -543,7 +543,7 @@ static void generateGetMethodPath(int8* path, int8* firstID, int8* secondID, clo
             break;
 
         case CLOUD_RES_TYPE_CMD:
-            strcat(path, "/cmds");
+            strcat(path, "/cmds/");
             strcat(path, firstID);
             break;
         case CLOUD_RES_TYPE_APILOG:
